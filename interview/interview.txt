@@ -1,5 +1,13 @@
-parameters 와 arguments 차이
-function, method 
+##### parameters 와 arguments 차이
+* Parameter : 매개변수, 함수와 메서드 입력 변수(Variable) 명
+const sum = ((num1, num2) => {
+    return num1 + num2; // num1, num2 는 parameter
+});
+
+* Argument : 전달인자, 함수와 메서드의 입력 값(Value)
+sum(1, 2); // 1, 2 는 argument
+
+##### function, method 
 프로토타입
 이벤트 버블링,
 프론트엔드 성능 개선
