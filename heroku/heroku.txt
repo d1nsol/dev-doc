@@ -1,0 +1,21 @@
+##### Create-React-App Heroku 배포 (git)
+1. $ heroku login
+
+2. $ heroku create <app name>
+
+3. heroku dashboard 에서 해당 프로젝트 확인 후 settings -> BuildPacks
+mars/create-react-app 추가
+
+4. static.json 추가
+프로젝트 root 경로에 추가
+{  
+  "root": "build/",  
+  "routes": { 
+    "/**": "index.html"  
+  }
+}
+
+5. push
+$ git commit -m "블라블라"
+$ git push origin master 
+$ git push heroku master 
